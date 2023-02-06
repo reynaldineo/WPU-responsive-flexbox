@@ -1,0 +1,166 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* Latihan 1 */
+.container-satu {
+  max-width: 800px;
+  /* ganti width aja */
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.kolom-utama {
+  order: 1;
+  text-align: justify;
+}
+
+.sidebar {
+  order: 2;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+/* Latihan 2 */
+.container-dua {
+  max-width: 800px;
+  /* max agar responsive uhuy */
+  margin: 50px auto;
+}
+
+.layanan {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.layanan.satu {
+  background-color: lightskyblue;
+}
+.layanan.dua {
+  background-color: lightgreen;
+}
+.layanan.tiga {
+  background-color: lightcoral;
+}
+
+/* Latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/* Latihan 4 */
+.container-empat {
+  max-width: 800px;
+  margin: 50px 40px;
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+  margin-bottom: 25px;
+  flex: 1;
+}
+
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.card.besar:hover {
+  transform: scale(1.1);
+}
+
+/* Latihan 5 */
+.container-lima {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: flex;
+  /* untuk menjadi tengah */
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  color: wheat;
+  text-align: center;
+  /* untuk menjadi tengah */
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+  /* untuk menjadi tengah */
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  /* artinya widhtnya minimal 600 untuk akses ini
+  kalau di bawah 600 ya ga pakai akses ini */
+
+  /* Latihan 2 */
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .layanan {
+    width: 30%;
+  }
+
+  /* Latihan 3 */
+  .thumbnail {
+    width: 30%;
+  }
+
+  /* Latihan 4 */
+
+  .card.besar:hover {
+    transform: scale(1.12);
+  }
+
+  .container-empat {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+  }
+}
